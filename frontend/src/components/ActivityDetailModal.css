@@ -1,0 +1,155 @@
+.activity-modal-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  padding: 1rem;
+}
+
+.activity-modal {
+  background: #fff;
+  border-radius: 10px;
+  max-width: 520px;
+  width: 100%;
+  max-height: 85vh;
+  overflow-y: auto;
+  padding: 1.25rem 1.5rem;
+  position: relative;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+.activity-modal-close {
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #666;
+  cursor: pointer;
+  line-height: 1;
+  padding: 0.25rem;
+}
+
+.activity-modal-close:hover {
+  color: #2c2c34;
+}
+
+.activity-modal-loading {
+  padding: 2rem;
+  text-align: center;
+  color: #555;
+}
+
+.activity-modal-header {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.activity-modal-type {
+  text-transform: capitalize;
+  color: #5b6bc0;
+}
+
+.activity-modal-source {
+  color: #1565c0;
+}
+
+.activity-modal-title {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.2rem;
+  color: #2c2c34;
+}
+
+.activity-modal-author {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.85rem;
+  color: #555;
+}
+
+.activity-modal-body {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #444;
+  white-space: pre-wrap;
+  margin-bottom: 1rem;
+}
+
+.activity-modal-entities h3,
+.activity-modal-related h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 0.9rem;
+  color: #444;
+}
+
+.activity-modal-entity-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.35rem;
+  margin-bottom: 1rem;
+}
+
+.activity-modal-entity-tags .entity-tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  background: #e8e8f0;
+  border-radius: 4px;
+  color: #444;
+}
+
+.activity-modal-related-hint {
+  font-size: 0.8rem;
+  color: #666;
+  margin: 0 0 0.5rem 0;
+}
+
+.activity-modal-related-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.activity-modal-related-list li {
+  margin-bottom: 0.25rem;
+}
+
+.activity-modal-related-item {
+  display: block;
+  width: 100%;
+  text-align: left;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #e0e0e6;
+  border-radius: 6px;
+  background: #fafafa;
+  cursor: pointer;
+  font-size: 0.9rem;
+  color: #2c2c34;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.activity-modal-related-item:hover {
+  background: #f0f0f4;
+  border-color: #d0d0d8;
+}
+
+.activity-modal-related-item .act-type {
+  display: inline-block;
+  margin-right: 0.5rem;
+  font-size: 0.75rem;
+  color: #5b6bc0;
+  text-transform: capitalize;
+  min-width: 4rem;
+}
+
+.activity-modal-related-item time {
+  display: block;
+  font-size: 0.75rem;
+  color: #666;
+  margin-top: 0.2rem;
+}

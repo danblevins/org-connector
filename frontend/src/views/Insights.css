@@ -1,0 +1,244 @@
+.insights {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.insights-header {
+  margin-bottom: 1.5rem;
+}
+
+.insights-header h1 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.75rem;
+  color: #2c2c34;
+}
+
+.subtitle {
+  margin: 0 0 1rem 0;
+  color: #555;
+  font-size: 0.95rem;
+}
+
+.findings-section {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: linear-gradient(135deg, #f0f2ff 0%, #faf8ff 100%);
+  border: 1px solid #e0e0ec;
+  border-radius: 10px;
+}
+
+.findings-title {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.15rem;
+  color: #2c2c34;
+}
+
+.findings-intro {
+  margin: 0 0 1rem 0;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.findings-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 0.75rem;
+}
+
+.finding-card {
+  padding: 0.9rem 1rem;
+  background: #fff;
+  border-radius: 8px;
+  border-left: 4px solid #5b6bc0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.finding-card--cross_team { border-left-color: #2e7d32; }
+.finding-card--hot_topic { border-left-color: #6a1b9a; }
+.finding-card--connector { border-left-color: #1565c0; }
+.finding-card--launch_alignment { border-left-color: #e65100; }
+.finding-card--bottleneck { border-left-color: #c62828; }
+.finding-card--insight { border-left-color: #5b6bc0; }
+
+.finding-card-title {
+  margin: 0 0 0.4rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c2c34;
+}
+
+.finding-card-desc {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #444;
+}
+
+.charts-section {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem;
+  background: #fff;
+  border: 1px solid #e0e0e6;
+  border-radius: 10px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.charts-title {
+  margin: 0 0 1rem 0;
+  font-size: 1.15rem;
+  color: #2c2c34;
+}
+
+.charts-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+
+@media (max-width: 700px) {
+  .charts-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.chart-card {
+  padding: 1rem;
+  background: #fafafa;
+  border-radius: 8px;
+  border: 1px solid #e8e8ec;
+}
+
+.chart-card-title {
+  margin: 0 0 0.75rem 0;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #2c2c34;
+}
+
+.filters {
+  display: flex;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.search-input {
+  flex: 1;
+  min-width: 200px;
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d0d0d8;
+  border-radius: 6px;
+  background: #fff;
+  color: #2c2c34;
+  font-size: 0.95rem;
+}
+
+.search-input::placeholder {
+  color: #888;
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #5b6bc0;
+  box-shadow: 0 0 0 2px rgba(91, 107, 192, 0.2);
+}
+
+.filter-select {
+  padding: 0.5rem 0.75rem;
+  border: 1px solid #d0d0d8;
+  border-radius: 6px;
+  background: #fff;
+  color: #2c2c34;
+  font-size: 0.9rem;
+}
+
+.filter-select:focus {
+  outline: none;
+  border-color: #5b6bc0;
+}
+
+.loading,
+.empty {
+  color: #555;
+  padding: 2rem;
+  text-align: center;
+}
+
+.insights-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}
+
+@media (max-width: 700px) {
+  .insights-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+.insight-card {
+  background: #fff;
+  border: 1px solid #e0e0e6;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+}
+
+.insight-card-clickable {
+  cursor: pointer;
+  transition: border-color 0.15s, box-shadow 0.15s;
+}
+
+.insight-card-clickable:hover {
+  border-color: #5b6bc0;
+  box-shadow: 0 2px 8px rgba(91, 107, 192, 0.15);
+}
+
+.insight-card-clickable:focus {
+  outline: none;
+  border-color: #5b6bc0;
+  box-shadow: 0 0 0 2px rgba(91, 107, 192, 0.25);
+}
+
+.card-meta {
+  display: flex;
+  gap: 0.75rem;
+  font-size: 0.8rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+.card-meta .type {
+  text-transform: capitalize;
+  color: #5b6bc0;
+}
+
+.card-meta .source {
+  color: #1565c0;
+}
+
+.card-title {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.05rem;
+  color: #2c2c34;
+}
+
+.card-body {
+  margin: 0 0 0.75rem 0;
+  color: #444;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.related {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.entity-tag {
+  font-size: 0.75rem;
+  padding: 0.2rem 0.5rem;
+  background: #e8e8f0;
+  border-radius: 4px;
+  color: #444;
+}
