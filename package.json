@@ -1,0 +1,12 @@
+{
+  "name": "org-connector",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Org Connector - unified knowledge and network visualization",
+  "scripts": {
+    "build": "cd backend && npm install && npm run build && cd ../frontend && npm install && npm run build"
+  },
+  "dependencies": {
+    "serverless-http": "^3.2.0"
+  }
+}

@@ -6,7 +6,9 @@ Unified knowledge and network visualization for organizations. Connects scattere
 
 ## Setup
 
-### Backend
+### Local development (two terminals)
+
+**Backend**
 
 ```bash
 cd backend
@@ -17,7 +19,7 @@ npm start
 
 API runs at `http://localhost:4000`.
 
-### Frontend
+**Frontend**
 
 ```bash
 cd frontend
@@ -26,6 +28,16 @@ npm run dev
 ```
 
 App runs at `http://localhost:3000` and proxies `/api` to the backend.
+
+### Deploy on Netlify
+
+The app is set up to run on Netlify: static frontend plus a serverless function that serves the API.
+
+1. From the repo root: `npm install` (installs `serverless-http` for the function).
+2. Connect the repo to Netlify. Use the built-in build: **Build command** `npm run build`, **Publish directory** `frontend/dist`, **Functions directory** `netlify/functions`.
+3. Or rely on the root `netlify.toml`: it sets build, publish, and redirects `/api/*` to the function.
+
+Local build from root (same as Netlify): `npm run build` (builds backend then frontend).
 
 ## Features
 
@@ -44,9 +56,12 @@ App runs at `http://localhost:3000` and proxies `/api` to the backend.
 | GET | `/api/activities/:id` | Get one activity |
 | GET | `/api/insights` | Search insights (optional: `?q=&source=&type=&since=&limit=`) |
 | GET | `/api/graph` | Graph nodes and edges for the network view |
+| GET | `/api/findings` | Org-wide findings (cross-team, hot topics, etc.) |
+| GET | `/api/stats` | Activity stats (by type, by day) for charts |
 | POST | `/api/sync` | Run all connectors and refresh data |
 
 ## Project layout
 
 - `backend/` — Express + TypeScript: store, connector registry, mock connector, graph builder, routes.
 - `frontend/` — React + Vite + TypeScript: Insights view, Network view (react-force-graph-2d), API client.
+- `netlify/functions/` — Serverless API handler (wraps Express app with serverless-http for Netlify).
