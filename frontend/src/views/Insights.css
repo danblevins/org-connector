@@ -10,33 +10,33 @@
 .insights-header h1 {
   margin: 0 0 0.25rem 0;
   font-size: 1.75rem;
-  color: #2c2c34;
+  color: var(--text);
 }
 
 .subtitle {
   margin: 0 0 1rem 0;
-  color: #555;
+  color: var(--text-muted);
   font-size: 0.95rem;
 }
 
 .findings-section {
   margin-bottom: 1.5rem;
   padding: 1.25rem;
-  background: linear-gradient(135deg, #f0f2ff 0%, #faf8ff 100%);
-  border: 1px solid #e0e0ec;
+  background: var(--findings-bg);
+  border: 1px solid var(--border);
   border-radius: 10px;
 }
 
 .findings-title {
   margin: 0 0 0.35rem 0;
   font-size: 1.15rem;
-  color: #2c2c34;
+  color: var(--text);
 }
 
 .findings-intro {
   margin: 0 0 1rem 0;
   font-size: 0.9rem;
-  color: #555;
+  color: var(--text-muted);
 }
 
 .findings-grid {
@@ -47,10 +47,10 @@
 
 .finding-card {
   padding: 0.9rem 1rem;
-  background: #fff;
+  background: var(--bg-elevated);
   border-radius: 8px;
-  border-left: 4px solid #5b6bc0;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  border-left: 4px solid var(--accent);
+  box-shadow: 0 1px 2px var(--shadow);
 }
 
 .finding-card--cross_team { border-left-color: #2e7d32; }
@@ -64,29 +64,29 @@
   margin: 0 0 0.4rem 0;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #2c2c34;
+  color: var(--text);
 }
 
 .finding-card-desc {
   margin: 0;
   font-size: 0.85rem;
   line-height: 1.45;
-  color: #444;
+  color: var(--text-dim);
 }
 
 .charts-section {
   margin-bottom: 1.5rem;
   padding: 1.25rem;
-  background: #fff;
-  border: 1px solid #e0e0e6;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
   border-radius: 10px;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 2px var(--shadow);
 }
 
 .charts-title {
   margin: 0 0 1rem 0;
   font-size: 1.15rem;
-  color: #2c2c34;
+  color: var(--text);
 }
 
 .charts-grid {
@@ -103,16 +103,16 @@
 
 .chart-card {
   padding: 1rem;
-  background: #fafafa;
+  background: var(--bg-muted);
   border-radius: 8px;
-  border: 1px solid #e8e8ec;
+  border: 1px solid var(--border);
 }
 
 .chart-card-title {
   margin: 0 0 0.75rem 0;
   font-size: 0.95rem;
   font-weight: 600;
-  color: #2c2c34;
+  color: var(--text);
 }
 
 .filters {
@@ -125,40 +125,40 @@
   flex: 1;
   min-width: 200px;
   padding: 0.5rem 0.75rem;
-  border: 1px solid #d0d0d8;
+  border: 1px solid var(--border-strong);
   border-radius: 6px;
-  background: #fff;
-  color: #2c2c34;
+  background: var(--bg-elevated);
+  color: var(--text);
   font-size: 0.95rem;
 }
 
 .search-input::placeholder {
-  color: #888;
+  color: var(--text-muted);
 }
 
 .search-input:focus {
   outline: none;
-  border-color: #5b6bc0;
-  box-shadow: 0 0 0 2px rgba(91, 107, 192, 0.2);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-dim);
 }
 
 .filter-select {
   padding: 0.5rem 0.75rem;
-  border: 1px solid #d0d0d8;
+  border: 1px solid var(--border-strong);
   border-radius: 6px;
-  background: #fff;
-  color: #2c2c34;
+  background: var(--bg-elevated);
+  color: var(--text);
   font-size: 0.9rem;
 }
 
 .filter-select:focus {
   outline: none;
-  border-color: #5b6bc0;
+  border-color: var(--accent);
 }
 
 .loading,
 .empty {
-  color: #555;
+  color: var(--text-muted);
   padding: 2rem;
   text-align: center;
 }
@@ -176,11 +176,11 @@
 }
 
 .insight-card {
-  background: #fff;
-  border: 1px solid #e0e0e6;
+  background: var(--bg-elevated);
+  border: 1px solid var(--border);
   border-radius: 8px;
   padding: 1rem 1.25rem;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04);
+  box-shadow: 0 1px 2px var(--shadow);
 }
 
 .insight-card-clickable {
@@ -189,27 +189,27 @@
 }
 
 .insight-card-clickable:hover {
-  border-color: #5b6bc0;
-  box-shadow: 0 2px 8px rgba(91, 107, 192, 0.15);
+  border-color: var(--accent);
+  box-shadow: 0 2px 8px var(--accent-dim);
 }
 
 .insight-card-clickable:focus {
   outline: none;
-  border-color: #5b6bc0;
-  box-shadow: 0 0 0 2px rgba(91, 107, 192, 0.25);
+  border-color: var(--accent);
+  box-shadow: 0 0 0 2px var(--accent-dim);
 }
 
 .card-meta {
   display: flex;
   gap: 0.75rem;
   font-size: 0.8rem;
-  color: #555;
+  color: var(--text-muted);
   margin-bottom: 0.5rem;
 }
 
 .card-meta .type {
   text-transform: capitalize;
-  color: #5b6bc0;
+  color: var(--accent);
 }
 
 .card-meta .source {
@@ -219,12 +219,12 @@
 .card-title {
   margin: 0 0 0.5rem 0;
   font-size: 1.05rem;
-  color: #2c2c34;
+  color: var(--text);
 }
 
 .card-body {
   margin: 0 0 0.75rem 0;
-  color: #444;
+  color: var(--text-dim);
   font-size: 0.9rem;
   line-height: 1.5;
 }
@@ -238,7 +238,7 @@
 .entity-tag {
   font-size: 0.75rem;
   padding: 0.2rem 0.5rem;
-  background: #e8e8f0;
+  background: var(--bg-muted);
   border-radius: 4px;
-  color: #444;
+  color: var(--text-dim);
 }

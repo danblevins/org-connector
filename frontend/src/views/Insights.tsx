@@ -54,7 +54,7 @@ export function Insights() {
     <div className="insights">
       <header className="insights-header">
         <h1>Insights</h1>
-        <p className="subtitle">Search and browse activities across the organization. Click a card to see details and related activities.</p>
+        <p className="subtitle">Search and browse activities here, or use the Network tab to explore how people, teams, and topics connect. Click any card or node to see details and related activities.</p>
         {findings.length > 0 && (
           <section className="findings-section" aria-label="Interesting connections and findings">
             <h2 className="findings-title">Interesting connections across the org</h2>
