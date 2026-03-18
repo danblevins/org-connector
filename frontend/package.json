@@ -37,7 +37,6 @@
     "escalade": "^3.2.0",
     "float-tooltip": "^1.7.5",
     "force-graph": "^1.51.1",
-    "fsevents": "^2.3.3",
     "gensync": "1.0.0-beta.2",
     "index-array-by": "^1.4.2",
     "internmap": "^2.0.3",
