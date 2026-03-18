@@ -1,9 +1,8 @@
 const serverless = require('serverless-http');
-const path = require('path');
 
-// Require built backend (must run after backend is built)
-const { app } = require(path.join(__dirname, '../../backend/dist/app'));
-const { runMockConnector } = require(path.join(__dirname, '../../backend/dist/connectors/runMock'));
+// Static require so Netlify's bundler includes the backend (backend must be built first)
+const { app } = require('../../backend/dist/app');
+const { runMockConnector } = require('../../backend/dist/connectors/runMock');
 
 let seeded = false;
 
