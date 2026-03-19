@@ -2,6 +2,8 @@
 
 **Problem Statement**: Organizations suffer from fragmented information sharing and knowledge silos, resulting in operational inefficiencies, redundant work, and lost collaborative potential. Valuable institutional knowledge remains trapped within disparate systems and workflows. We need a unified solution that synthesizes scattered organizational data into actionable insights, driving cross-functional knowledge sharing, accelerating collaboration, and empowering data-informed decision-making.
 
+https://orgconnector.surge.sh/
+
 Unified knowledge and network visualization for organizations. Connects scattered information from meetings, Slack, Asana, and other sources into a single view with searchable insights and an interactive network graph.
 
 ## Setup
